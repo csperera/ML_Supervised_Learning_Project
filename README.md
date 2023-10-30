@@ -8,7 +8,7 @@ We performed exploratory data analysis and found no missing values in the data s
 
 ## Part 2 – Preprocessing & Feature Engineering
 
-As mentioned earlier although there are no missing values, there were many zero values in columns such as blood pressure, skin thickness, insulin and BMI which are obviously erroneous and had to be dealt with utilizing future engineering.  Additionally, outliers in the dataset were located and Windsor risation of these outliers was accomplished at the 95th percentile.
+As mentioned earlier although there are no missing values, there were many zero values in columns such as blood pressure, skin thickness, insulin and BMI which are obviously erroneous and had to be dealt with utilizing future engineering.  Additionally, outliers in the dataset were located and Windsorisation of these outliers was accomplished at the 95th percentile.
 
 ## Part 3 - Training The ML Model
 The binary classification models chosen were the Random Forest model and the XG boost classification model. After splitting the data into a training and test set, and then fitting them to each model we ran each model and derived metrics for each model. Ultimately the Random Forest Classifier seemed to provide higher accuracy then the XG Boost classifier likely because the Random Forest Classifier is a generally simpler model. It should be noted that we did not optimize either model as we were time constrained to do so however this would should be the next step going forward.
