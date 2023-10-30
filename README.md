@@ -1,16 +1,14 @@
 # machine_learning_project-supervised-learning
 
-## Project Outcomes
-- Supervised Learning: use supervised learning techniques to build a machine learning model that can predict whether a patient has diabetes or not, based on certain diagnostic measurements.The project involves three main parts: exploratory data analysis, preprocessing and feature engineering, and training a machine learning model. 
-### Duration:
-Approximately 3 hours and 20 minutes.
-### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Project Overview
+In this Project, we are going to perform a full supervised learning machine learning project on a "Diabetes" dataset. This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether a patient has diabetes, based on certain diagnostic measurements included in the dataset.
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+## Part 1 - Exploratory Data Analysis
+We performed exploratory data analysis and found no missing values in the data set. Although there were no missing values, many values did have a zero which were obviously erroneous and would have to be corrected. The predictor variables were linearly related to the outcome variable. There were outliers in the predictor variables which would have to be addressed.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+## Part 2 – Preprocessing & Feature Engineering
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+As mentioned earlier although there are no missing values, there were many zero values in columns such as blood pressure, skin thickness, insulin and BMI which are obviously erroneous and had to be dealt with utilizing future engineering.  Additionally, outliers in the dataset were located and Windsor risation of these outliers was accomplished at the 95th percentile.
+
+## Part 3 - Training The ML Model
+The binary classification models chosen were the Random Forest model and the XG boost classification model. After splitting the data into a training and test set, and then fitting them to each model we ran each model and derived metrics for each model. Ultimately the Random Forest Classifier seemed to work better then the XG Boost classifier likely because the random forest classifier is a generally simpler model. It should be noted that we did not optimize either model as we were time constrained to do so however this would should be the next step going forward.
